@@ -1,0 +1,270 @@
+let carts = document.querySelectorAll(' .add-cart ');
+
+let products = [
+    {
+        name:'Filorga NCTF-ESSENCE',
+        tag: 'Filorga NCTF-ESSENCE',
+        price: 124.940,
+        inCart: 0
+    },
+    {
+        name:'Filorga Oxygen-Glow' ,
+        tag: 'Filorga Oxygen-Glow',
+        price: 106.267,
+        inCart: 0
+    },
+    {
+        name: 'Laino Lotion micellaire',
+        tag:'Laino Lotion micellaire éclat Haute tolérence' ,
+        price: 36.010,
+        inCart: 0
+    },
+    {
+        name: 'SVR Huile lavante',
+        tag:'SVR Huile lavante' ,
+        price: 55.335,
+        inCart: 0
+    },
+    {
+        name:'Ultrasun Spf 50+' ,
+        tag: 'Ultrasun SPF 50+',
+        price: 41.007,
+        inCart: 0
+    },
+    {
+        name:'Evoluderm Soin De Visage' ,
+        tag:'Evoluderm soin du visage' ,
+        price: 9.000,
+        inCart: 0
+    },
+    {
+        name:'Bioxsine DermaGen' ,
+        tag:'Bioxsine DermaGen' ,
+        price: 124.940,
+        inCart: 0
+    },
+    {
+        name:'Liperol Plus' ,
+        tag:'Liperol Plus' ,
+        price: 106.267,
+        inCart: 0
+    },
+    {
+        name: 'Phtéal Ultraliss',
+        tag:'Phytéal Ultraliss' ,
+        price: 30.780,
+        inCart: 0
+    },
+    {
+        name:'Phyto paris' ,
+        tag:'Phyto paris' ,
+        price: 69.000,
+        inCart: 0
+    },
+    {
+        name:'SVR Topialyse' ,
+        tag: 'SVR Topialyse gel lavant',
+        price: 38.200,
+        inCart: 0
+    },
+    {
+        name:'Vichy Dercos' ,
+        tag:'VICHY Dercos' ,
+        price: 151.368,
+        inCart: 0
+    },
+    {
+        name:'Klorane Eau nettoyante' ,
+        tag: 'Bébé Klorane Eau nettoyante',
+        price: 35.700,
+        inCart: 0
+    },
+    {
+        name:'Gel Lavant Doux' ,
+        tag:'Bébé klorane' ,
+        price: 15.000,
+        inCart: 0
+    },
+    {
+        name: 'Mustela Gel Lavant',
+        tag:'Mustela' ,
+        price: 22.848 ,
+        inCart: 0
+    },
+    {
+        name:'Musti Eau De soin' ,
+        tag: 'Musti',
+        price: 38.556,
+        inCart: 0
+    },
+    {
+        name:'Uriace Eau Thermale' ,
+        tag:'Uriace Eau Thermale' ,
+        price: 42.000 ,
+        inCart: 0
+    },
+    {
+        name:'Uriace Crème Lavante' ,
+        tag: 'Uriace Crème Lavante',
+        price: 30.400,
+        inCart: 0
+    },
+    {
+        name: 'Doppel-Herz Aktiv',
+        tag:'aktiv' ,
+        price: 29.750,
+        inCart: 0
+    },
+   {
+        name:'Compléments De Fer' ,
+        tag: 'Fer',
+        price:15.875 ,
+        inCart: 0
+    },
+    {
+        name:'Omega 3' ,
+        tag: 'Omega 3',
+        price: 40.000,
+        inCart: 0
+    },
+    {
+        name:'Spiruline Gatrana' ,
+        tag: 'Spiruline',
+        price: 42.412,
+        inCart: 0
+    },
+    {
+        name:'Vital Sélénium' ,
+        tag:'Vital sélénium' ,
+        price: 26.537,
+        inCart: 0
+    },
+    {
+        name: 'Compléments Vitamines',
+        tag:'Vitamines' ,
+        price: 13.804,
+        inCart: 0
+    },
+    {
+        name:"AlmaFlore Bain d'huile" ,
+        tag:"Alma Flore Bain d'huile" ,
+        price:16.853 ,
+        inCart: 0
+    },
+    {
+        name:'Bio Orient Huiles Rouges' ,
+        tag: 'Bio orient huiles rouges',
+        price: 19.219,
+        inCart: 0
+    },
+    {
+        name:'Bio Orient Huiles Verts' ,
+        tag: 'Bio Orient huiles verts',
+        price: 14.211,
+        inCart: 0
+    },
+    {
+        name:'Bio Orient Huiles Bleus ' ,
+        tag: 'Bio orient Huiles',
+        price: 9.104,
+        inCart: 0
+    },
+    {
+        name:'Bio Orient Eau De Rose' ,
+        tag:'Bio orient' ,
+        price: 8.211,
+        inCart: 0
+    },
+    {
+        name: 'Bio Orient Huiles Marons',
+        tag: 'Phytotherapie',
+        price: 19.889,
+        inCart: 0
+    },
+    {
+        name: 'Aqua Ligne Turbo Minceur',
+        tag: 'Aqua Ligne Turbo Minceur',
+        price: 62.000,
+        inCart: 0
+    },
+    {
+        name:'Bio Orient Minceur' ,
+        tag:'Bio Orient Minceur',
+        price: 16.360,
+        inCart: 0
+    },
+    {
+        name: 'Dermafig Minceur',
+        tag: 'Dermafig',
+        price: 20.000,
+        inCart: 0
+    },
+    {
+        name: 'Quick Weight Loss',
+        tag:'Quick weight loss' ,
+        price: 29.000,
+        inCart: 0
+    },
+    {
+        name: 'Phytothera Huile Minceur',
+        tag:'Phytothera Huile Minceur' ,
+        price: 13.800,
+        inCart: 0
+    },
+
+    {
+        name: 'Naturalya',
+        tag:'Naturalya' ,
+        price: 19.000,
+        inCart: 0
+    },
+
+
+];
+for(let i=0; i<carts.length; i++) {
+    carts[i].addEventListener('click', () => {
+        cartNumbers(products[i]);
+        totalCost(products[i])
+    })
+}
+
+function cartNumbers(product) {
+    let productNumbers = localStorage.getItem('cartNumbers');
+    productNumbers = parseInt(productNumbers);
+
+    if(productNumbers){
+        localStorage.setItem('cartNumbers', productNumbers + 1);
+
+    } else {
+        localStorage.setItem('cartNumbers', 1);
+    }
+    
+
+    setItems(product);
+}
+
+function setItems(product) {
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
+
+    if(cartItems != null) {
+        if(cartItems[product.tag] == undefined){
+            cartItems = {
+                ...cartItems,
+                [product.tag]: product
+            }
+        }
+         cartItems[product.tag].inCart += 1;
+    } else {
+        product.inCart = 1;
+        cartItems = {
+            [product.tag]: product
+        }
+    }
+    
+    localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+
+}
+function totalCost(product){
+    console.log("The product price is", product.price);
+}
