@@ -1,0 +1,172 @@
+
+body{
+    margin : 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+
+}
+
+/* Navigation bar + Logo */
+
+#XD{
+    
+    border-radius: 60%;
+    float:left;
+    padding:10px 0;
+}
+
+header::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+.Header{
+    width:90%;
+    margin:0 auto;
+    
+
+}
+
+header{
+    background: #5cb300
+}
+
+nav{
+    float:right;
+}
+nav ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+nav li {
+    display:inline-block;
+    margin-top:40px;
+    margin-left:35px;
+    position:relative;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color:greenyellow
+}
+nav a::before{
+    content: '';
+    display:block;
+    height: 3px;
+    width:0%;
+    background-color: greenyellow;
+    transition: all ease-in-out 250ms;
+    
+}
+
+nav a:hover::before{
+    width:100%;
+}
+
+/* Search Bar */
+
+.sample {
+    height: 50px;
+    margin: 20px 0;
+    position: relative;
+    width: 30%;
+  }
+  .sample input{
+    border-radius: 15px;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    width: 50%;
+  }
+  .sample input:focus {
+    width: 100%;
+  }
+  .sample input:focus ~ button.btn-search {
+      background: hotpink url(search-icon.svg) no-repeat 0 0;
+      background-size: 90%;
+      color: #fff;
+  }
+  .sample button{
+    transition: all 0.3s ease-in-out;
+  }
+  .sample button.btn-search {
+    border-radius: 50%;
+    height: 26px;
+    right: 2px;
+    top: 2px;;
+    transition: all 0.3s ease-in-out;
+    width: 26px;
+    cursor: pointer;
+}
+.sample {
+    float:right;
+}
+.img-search-box{
+    display:flex;
+    padding-left:180px;
+    justify-content: space-around;
+}
+
+/* Map + Paragraph */
+
+.map{
+    border-radius:20%;
+    border:greenyellow  ;
+    border-style:solid;
+    border-width:5px;
+    float:right;
+    margin:50px;
+}
+.title{
+    color: #5cb300;
+    margin:120px;
+    font-size:25px;
+    
+}
+.paragraphe{
+    font-size:14px;
+    
+}
+
+/* Footer */
+
+footer{
+    position:relative;
+    bottom:0px;
+    width:100%;
+    background:#111;
+    color:#d9d9d9;
+    
+}
+.main-content{
+    display:flex;
+    justify-content:space-between;
+    margin:40px;
+    margin-bottom:0px;
+    font-size: 1.125rem;
+}
+.social-media{
+    margin:20px 0 0 0;
+}
+.social-media a{
+    padding:0 2px;
+}
+.social-media a span{
+    height:40px;
+    width:40px;
+    background:#1a1a1a;
+    line-height: 40px;
+    text-align:center;
+    font-size:18px;
+    border-radius:5px;
+    color: #5cb300;
+    transition:0.3s;
+}
+.social-media a span:hover{
+    background: white;
+}    
+
